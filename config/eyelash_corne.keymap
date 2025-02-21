@@ -124,6 +124,11 @@
             bindings = <&tog 0>;
             key-positions = <44 45>;
         };
+
+        langswitch {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <3 9>;
+        };
     };
 
     macros {
@@ -199,10 +204,10 @@
 
         mse {
             bindings = <
-&trans  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans                        &trans          &trans     &trans           &trans         &trans         &trans         &trans
-&trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N0)            &trans  &trans  &trans  &trans     &kp RIGHT_SHIFT  &kp RCTRL      &kp LEFT_ALT   &kp RIGHT_WIN  &trans
-&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(Y)   &trans            &trans          &trans     &trans           &tog 4         &kp RIGHT_ALT  &trans         &trans
-                                        &kp ESC         &kp SPACE        &kp TAB                                       &kp ENTER  &tog 0           &kp BACKSPACE
+&none  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans                        &trans          &trans     &trans           &trans         &trans         &trans         &none
+&none  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N0)            &trans  &trans  &trans  &trans     &kp RIGHT_SHIFT  &kp RCTRL      &kp LEFT_ALT   &kp RIGHT_WIN  &none
+&none  &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(Y)   &trans            &trans          &trans     &trans           &tog 4         &kp RIGHT_ALT  &trans         &none
+                                       &kp ESC         &kp SPACE        &kp TAB                                       &kp ENTER  &tog 0           &kp BACKSPACE
             >;
 
             label = "MOUSE";
